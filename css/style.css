@@ -176,8 +176,8 @@ header ul li{
 
     display: inline-block;
 
-    height: 40px;
-    width: 50px;
+    height: 2.5rem;
+    width: 4rem;
 }
 
 .subtitulo{
@@ -188,6 +188,7 @@ header ul li{
     border-bottom-left-radius: 50px;
     background-color: #F5F5F5;
 
+    height: 2.5rem;
     width: auto;
 }
 
@@ -196,7 +197,7 @@ header ul li{
     font-weight: 500;
     margin-top: 2vw;
         
-    padding-left: 65px;
+    padding-left: 80px;
     width: 35vw;
 }
 
@@ -404,6 +405,34 @@ header ul li{
     color: white;
 }
 
+@media(max-width: 780px){
+    #menu{
+        display: block !important;
+        font-size: 3rem;
+    }
+    .listaHeader, .boton_Get_Started1{
+        display: none;
+    }
+    .descripcion{
+        padding:initial !important;
+        width: unset !important;
+        text-align: justify;
+    }
+    .opiniones{
+        flex-direction: column;
+    }
+   .footer1 div i{
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    .contenido1, .contenido2, .derechos, .contenido4, .footer0, .footer1, .contenido1_izq{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
 
 @media(max-width: 480px){
     .contenido1, .footer0, .footer1{
